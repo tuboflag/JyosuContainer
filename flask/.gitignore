@@ -1,0 +1,5 @@
+.python-version
+.vscode
+/pgadmin
+/postgresql/data
+/app/__pycache__
