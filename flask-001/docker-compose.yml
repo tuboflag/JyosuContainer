@@ -7,7 +7,14 @@ services:
     container_name: flask_app
     volumes:
       - ./app:/usr/src/app
+    environment:
+      TZ: Asia/Tokyo
+      FLASK_APP: app.py
+      FLASK_ENV: development
     command: "flask run --host 0.0.0.0"
+    tty: true
+    links:
+      - postgresql
   postgresql:
     # イメージの指定
     image: postgres:13.6

@@ -6,7 +6,11 @@ import psycopg2
 
 # postgresqlのDBの設定
 #DATABASE = "postgresql://root:linux202009@192.168.4.109:5432/flask_tutorial"
-DATABASE = "postgresql://root:linux202009@192.168.4.109:5432/flask_tutorial"
+#DATABASE = "postgresql://postgres:@127.0.0.1:5432/flask_tutorial"
+#DATABASE = "postgresql://postgres:@postgres:5432/flask_tutorial"
+#DATABASE = f"postgresql+psycopg2://root:linux202009@flask_postgresql:5432/flask_tutorial"
+DATABASE = "postgresql+psycopg2://root:linux202009@flask_postgresql/flask_tutorial"
+
 ENGINE = create_engine(
     DATABASE,
     encoding="utf-8",
