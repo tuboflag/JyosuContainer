@@ -5,8 +5,8 @@ from sqlalchemy.ext.declarative import declarative_base
 import psycopg2
 
 # postgresqlのDBの設定
-DATABASE = "postgresql://root:linux202009@localhost:5432/flask_tutorial"
-
+#DATABASE = "postgresql://root:linux202009@192.168.4.109:5432/flask_tutorial"
+DATABASE = "postgresql://root:linux202009@192.168.4.109:5432/flask_tutorial"
 ENGINE = create_engine(
     DATABASE,
     encoding="utf-8",

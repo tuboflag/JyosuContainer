@@ -1,4 +1,5 @@
 #!/bin/bash
+
 psql -U postgres -d flask_tutorial << "EOSQL"
 CREATE TABLE users (
         id SERIAL NOT NULL, 
@@ -8,3 +9,4 @@ CREATE TABLE users (
         PRIMARY KEY (id)
 );
 EOSQL
+
